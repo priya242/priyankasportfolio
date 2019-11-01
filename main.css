@@ -35,10 +35,10 @@
     height: 99%;
     width:160px;
     background-color:brown;
-    position: absolute;
+    position: relative;
     top: 0%;
     left: 0%;
-  
+    bottom:100%;
 }
 
 .sidenav a{
@@ -57,26 +57,21 @@ color:lightcoral;
 .fab{
     font-size: 2rem;
     color:#fff;
-    display:block;
     text-align: center;
-    margin-bottom:1rem;
+    margin-bottom:2rem;
+    width:100%;
 }
 
 div > .fab:first-child{
-margin-top:20rem;
+    margin-top:4rem;
 }
 
 .about{
     position: relative;
     bottom:100%;
-    color: rgb(51, 5, 5);
+    color: #fff;
     font-size: larger;
-    column-count: 4;
-    column-gap: 40px;
-    column-rule-style: solid;
     text-align: center;
-    margin-top:20rem;
-    
 }
 
 .resume{
