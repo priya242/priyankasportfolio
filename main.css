@@ -77,9 +77,14 @@ div > .fab:first-child{
 
 .portfolio{
     position: relative;
-    bottom: 100%;
+    bottom: 99%;
     color:#fff;
-    
+    text-align: center;
+}
+
+.header{
+    margin:2rem;
+    color: #fff;
 }
 
 .row{
