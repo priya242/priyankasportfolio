@@ -11,11 +11,8 @@
 
 .canyon-img{
     width: 100%;
-    opacity:0.7;
     height: 99%;
 }
-
-
 
 .profile-section{
     text-align: center;
@@ -23,7 +20,7 @@
     position: absolute;
     top:10%;
     left:20%;
-    color:rgb(51, 5, 5);
+    color:#fff;
 }
 
 .profile-icon{
@@ -50,7 +47,7 @@
 }
 
 .sidenav a:hover{
-color:lightcoral;
+    color:lightcoral;
 }
 
 .fab{
@@ -67,7 +64,7 @@ div > .fab:first-child{
 
 .about{
     position: relative;
-    bottom:100%;
+    bottom:90%;
     color: #fff;
     font-size: larger;
     text-align: center;
@@ -81,7 +78,7 @@ div > .fab:first-child{
 .portfolio{
     position: relative;
     bottom: 100%;
-    color: rgb(51, 5, 5);
+    color:#fff;
     
 }
 
