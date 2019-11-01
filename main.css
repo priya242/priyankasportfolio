@@ -25,12 +25,12 @@
 
 .profile-icon{
     width: 30%;
-    border-radius:30px;
+    border-radius:1rem;
 }
 
 .sidenav{
     height: 99%;
-    width:160px;
+    width:10rem;
     background-color:brown;
     position: relative;
     left: 0%;
