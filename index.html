@@ -3,15 +3,34 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="main">
-        <div class="sidenav">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">PRIYANKA PANDEY</a>
+                <div class="nav-icon">
+                    <button class="contact-icon fab fa-linkedin" onclick=" window.open('https://www.linkedin.com/in/priyanka-pandey-b98290aa/','_blank')"></button>
+                    <button class="contact-icon fab fa-github-square" onclick="window.open('https://github.com/priya242','_blank')"></button>
+                    <button class="contact-icon fab fa-twitter" onclick="window.open('https://twitter.com/priyankapnd3','_blank')"></button>
+                </div>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+       <!-- <div class="sidenav">
             <a href="#HOME">HOME</a>
             <a href="#ABOUT">ABOUT</a>
             <a href="#RESUME">RESUME</a>
@@ -23,22 +42,27 @@
                 <button class="contact-icon fab fa-twitter" onclick="window.open('https://twitter.com/priyankapnd3','_blank')"></button>
             </div>
         </div>
-        <div style="height:50%;" class="page" id = "HOME">
+        -->
+        <div class="page" id = "HOME">
             <img class="b-img" src="./img/bg.png" alt="background-image">
             <div class="profile-section">
                 <img class="profile-icon" src="./img/profile.png" alt="dp">
                 <h1 class="header">PRIYANKA PANDEY</h1>
-                <h3>Software Engineer</h3>
+                <hr>
+                <h3>Web Developer | Software Engineer </h3>
             </div>
         </div>
-        <div style="height:50%;" class="page">
-            <img class="b-img" src="./img/bg.png" alt="background-image">
+        
+        <div class="page">
+           <!-- <img class="b-img" src="./img/bg.png" alt="background-image">-->
+           <section id = "about">
             <div class="main-content">
-                <h1 id="ABOUT" class="header">ABOUT ME</h1>
+                <h1 class="headings">ABOUT ME</h1>
+                <hr class = "line"></hr>
                 <div class="card">
                     <div class="card-body">
                         <p>
-                            <span style="font-size:2rem;">Hello! I am Priyanka,</span> currently pursuing Masters in Computer Science from Portland State University.
+                            <span>Hello! I am Priyanka,</span> currently pursuing Masters in Computer Science from Portland State University.
                             I am Inquisitive, energetic computer science specialist skilled in leadership,
                             with a strong foundation in math, logic, and cross-platform coding. I am passionate about building excellent software that improves the lives
                             of those around me.
@@ -50,13 +74,13 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <ul>
-                                    <li>Node.js</li>
+                                    <li>React</li>
                                     <li>JavaScript</li>
                                     <li>HTML & CSS</li>
                                     <li>Bootstrap</li>
                                 </ul>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-3">
                                 <ul>
                                     <li>Mongo DB</li>
                                     <li>Postgres SQL</li>
@@ -69,118 +93,173 @@
                 </div>
             </div>
         </div>
-        <div style="height:100%;" class="page">
-            <img class="b-img" src="./img/bg.png" alt="background-image">
-            <div class="main-content" style="margin:4rem;">
-                <h1 id="RESUME" class="header">RESUME</h1>
+    </section>
+    <!--
+        <div class="page">
+            <div class="main-content" >
+                <h1 class="headings">RESUME</h1>
+                <hr class = "line"></hr>
                 <iframe class="resume" src="./RESUMEINFOGRAPHIC.pdf"></iframe>
             </div>
         </div>
-        <div style="height:80%;" class="page">
-            <img class="b-img" src="./img/bg.png" alt="background-image">
+        -->
+        <section id = "projects">
+        <div class="page">
             <div class="main-content">
-                <h1 id="PORTFOLIO" class="header">PORTFOLIO</h1>
-                <div class="row">
-                    <div class="card col-sm-3">
-                        <img class="card-img-top" src="./img/hpyslogo.png" style="width: 100%;" alt="Card image cap">
-                    </div>
-                    <div class="col-sm-8">
-                        <p>
-                            Data Engineer volunteer in HomePlate Youth Services's upcomig project Youth Employment Program
-                            (YEP) to assist
-                            youth in their attempts to find stability through paid employment.
-                            Provided data processing support in their upcoming project
-                            Translating numbers into meaningful facts to help them make better business decisions.
+                <h1 class="headings">PROJECTS</h1>
+                <hr class = "line"></hr>
+                <div class="container">
+                    <div class ="row project">
+                       
+                        <div class ="col-md-4">
+                                <img class="card-img-top" src="./img/hpyslogo.png" style="width: 100%;" alt="Card image cap">
+                                <div class = "card-body">
+                                    <p class = "solid">MS Excel</p>
+                                    <p class = "solid">Pivot Table</p>
+                                    <p class = "solid">Power BI</p>
+             
+                                </div>
+                                <div class="overlay">
+                                    <h5 class="card-title">HomePlate Youth Services</h5>
+                                    <p class="card-text">
+                                            Data Engineer volunteer in HomePlate Youth Services's upcomig project Youth Employment Program
+                                            (YEP) to assist youth in their attempts to find stability through paid employment.
+                                            Provided data processing support in their upcoming project
+                                            Translating numbers into meaningful facts to help them make better business decisions.                                           
+                                    </p>
+                                  </div>
                             
-                        <p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card col-sm-3">
-                        <img class="card-img-top" src="./img/uw.png"
-                             alt="Card image cap">
-                    </div>
-                    <div class="col-sm-8">
-                        <p>
-                            Studied Data analysis and statistical techniques for knowledge discovery. Visual discovery and interpretation methods for large data sets.
-                            Information design, storytelling and presentation using visualization, pivot tables, graphs, charts, infographics and conditional data table formatting.
-                            Making predictions using decision trees, regression analysis, and supervised and unsupervised learning models.R and SQL programming practices.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card col-sm-3">
-                        <img class="card-img-top" src="./img/tcs.png" alt="Card image cap">
-                    </div>
-                    <div class="col-sm-8">
-                        <p>
-                            Worked as a member of VOICE Dev team, involved in design and development of programs of VOICE
-                            and Chorus to
-                            migrate and synchronize the data.
-                            Provided the Business information to .NET developers from VOICE for Chorus application
-                            development.
-                            Code Review on frequent basis and make the adjustments accordingly to ensure that no
-                            business requirements
-                            are missed.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card col-sm-3">
-                        <img class="card-img-top" src="./img/buddy.png" alt="Card image cap">
-                    </div>
-                    <div class="col-sm-8">
-                        <p>
-                            “Find a Buddy” is a web application that PSU students can use to find students with common interests to pair up  
-                            when they need a companion no matter what it be. The application lets a user find a buddy who is interested in a 
-                            particular sport or just needs help with studies or need carpool. Find a buddy will be a very helpful tool for new students
-                            who just joined the college and who don't know anyone around, this will help them start networking and feel more confident being at college.
-                        </p>
+                        </div>
+                   
+                        <div class ="col-md-4">
+                                <img class="card-img-top" src="./img/buddy.png" style="width: 100%;" alt="Card image cap">
+                                <div class = "card-body">
+                                    <p class = "solid">HTML</p>
+                                    <p class = "solid">CSS</p>
+                                    <p class = "solid">PHP</p>
+                                    <p class = "solid">MySql</p>
+                                </div>
+                                <div class="overlay">
+                                    <h5 class="card-title">Find your Buddy</h5>
+                                    <p class="card-text">
+                                        “Find your Buddy” is a web application that PSU students can use to find students with common interests to pair up  
+                                        when they need a companion no matter what it be. The application lets a user find a buddy who is interested in a 
+                                        particular sport or just needs help with studies or need carpool.                                         
+                                    </p>
+                                  </div>
+                        </div>
+                        <div class ="col-md-4">
+                            
+                                <img class="card-img-top" src="./img/satellite.png" style="width: 100%;height:90%;" alt="Card image cap">
+                                <div class = "card-body">
+                                    <p class = "solid">HTML</p>
+                                    <p class = "solid">CSS</p>
+                                    <p class = "solid">React</p>
+                                    <p class = "solid">Chart.js</p>
+                                </div>
+                                <div class="overlay">
+                                    <h5 class="card-title">Satellite Tracker</h5>
+                                    <p class="card-text">
+                                        Satellite tracker is a dashboard application created with React and chart.js 
+                                        that outputs key metrics and 
+                                        data points of the different satellites around the orbit with NASA APIs.                                          
+                                    </p>
+                                  </div>
+                            
+                        </div>
+                        <div class ="col-md-4">
+                            
+                                <img class="card-img-top" src="./img/battlecode.png" style="width: 100%;" alt="Card image cap">
+                                <div class = "card-body">
+                                    <p class = "solid">JAVA</p>
+                                </div>
+                                <div class="overlay">
+                                    <h5 class="card-title">Battlecode 2020</h5>
+                                    <p class="card-text">
+                                        Participated in MIT’s longest running competition where 
+                                        two teams of virtual robots execute different strategies 
+                                        against each other.                                          
+                                    </p>
+                                  </div>
+                            
+                        </div>
+                        <div class ="col-md-4">
+                           
+                                <img class="card-img-top" src="./img/0-1 knapsack.png" style="width: 100%;" alt="Card image cap">
+                                <div class = "card-body">
+                                    <p class = "solid">JAVA</p>
+                                   
+                                </div>
+                                <div class="overlay">
+                                    <h5 class="card-title">0/1 Knapsack Problem - Analysis of Algorithms</h5>
+                                    <p class="card-text">
+                                        Solved the problem by 2-Approximation (Greedy) algorithm, 
+                                        Dynamic programming algorithm using memoized recursive solution and 
+                                        then implementing Fully Polynomial Time Approximation Scheme (FPTAS) 
+                                        on optimal dynamic programming algorithm.Then did a comparative study of the complexity and each 
+                                        algorithm in terms of time and memory requirements,and in terms of required programming efforts.                                   
+                                    </p>
+                                  </div>
+                            
+                        </div>
+                        <div class ="col-md-4">
+                           
+                                <img class="card-img-top" src="./img/creditcard.png" style="width: 100%;" alt="Card image cap">
+                                <div class = "card-body">
+                                  
+                                    <p class = "solid">R</p>
+                                    <p class = "solid">ggplot2</p>
+                                    <p class = "solid">ggpairs</p>
+                                    <p class = "solid">dplyr</p>
+                                </div>
+                                <div class="overlay">
+                                    <h5 class="card-title">Credit Card Defaulters</h5>
+                                    <p class="card-text">
+                                        Identified interesting relationship and pattern 
+                                        between credit card defaulters data using 
+                                        ggplot2, ggpairs and dplyr.                                  
+                                    </p>
+                                  </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div style="height:50%;" class="page">
-            <img class="b-img" src="./img/bg.png" alt="background-image">
-            <div class="main-content" style="text-align:center;">
-                <h1 id="CONTACT" class="header">CONTACT</h1>
-                <label style="font-size:x-large;"><span style="font-size:40px; font-style:italic;">Thank you</span> for reviewing my portfolio! If you would like to contact me, please see below:</label>
+    </section>
+    <section id = "contact">
+        <div  class="page">
+            <div class="main-content">
+                <h1 class="headings">CONTACT</h1>
+                <hr class = "line"></hr>
+                <h4><span>Thank you</span> for reviewing my portfolio! 
+                    If you would like to contact me, 
+                    please see below:</h4>
                 <div>
                     <div style="margin-left:25%; font-size:2rem;">
                         <div class="row">
-                            <small class="col-md-4"><span class="contact-icon fas fa-envelope"></span>Email (School)</small>
+                            <small class="col-md-6"><span class="contact-icon fas fa-envelope"></span>Email (School)</small>
                             <label>pandey@pdx.edu</label>
                         </div>
                         <div class="row">
-                            <small class="col-md-4"><span class="contact-icon fas fa-envelope"></span>Email (Personal)</small>
+                            <small class="col-md-6"><span class="contact-icon fas fa-envelope"></span>Email (Personal)</small>
                             <label>priyankapnd3@gmail.com</label>
                         </div>
                         <div class="row">
-                            <small class="col-md-4"><span class="contact-icon fas fa-phone-square-alt"></span>Phone</small>
-                            <label>+1(971)803-9608</label>
-                        </div>
-                        <div class="row">
-                            <small class="col-md-4"><span class="contact-icon fab fa-skype"></span>Skype</small>
+                            <small class="col-md-6"><span class="contact-icon fab fa-skype"></span>Skype</small>
                             <label>priyanka.pandey91</label>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <button class="btn btn-primary" data-toggle="modal" data-target="#contactPopup">Contact me</button>
                     </div>
-                    <div style="margin:3rem;">
-                        <small class="col-md-4"><span class="contact-icon"></span>Connect on</small>
-                        <div>
-                            <button class="contact-icon fab fa-linkedin" onclick=" window.open('https://www.linkedin.com/in/priyanka-pandey-b98290aa/','_blank')"></button>
-                            <button class="contact-icon fab fa-github-square" onclick="window.open('https://github.com/priya242','_blank')"></button>
-                            <button class="contact-icon fab fa-twitter" onclick="window.open('https://twitter.com/priyankapnd3','_blank')"></button>
-                        </div>
-                    </div>
                     <div>
-                        <p>@2019 Priyanka Pandey, All rights reserved.</p>
+                        <p>@2020 Priyanka Pandey, All rights reserved.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
         </div>
     <div id="contactPopup" class="modal fade" role="dialog">
             <div class="modal-dialog">
